@@ -1,0 +1,16 @@
+.Title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.Title1{
+    font-size: 20px;
+}
+
+.Title2{
+    font-size: 40px;
+}
+.Title3{
+    font-size: 14px;
+}
