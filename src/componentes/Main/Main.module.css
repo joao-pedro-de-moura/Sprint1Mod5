@@ -1,0 +1,34 @@
+.Section1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   width: 100%;
+}
+.Cards{
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+.Section2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   width: 100%;
+}
+.Section3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   width: 100%;
+}
+
+.divButton{display: flex;
+  
+    justify-content: center;
+    align-items: center;
+   width: 100%;}
