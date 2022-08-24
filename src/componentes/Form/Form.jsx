@@ -8,8 +8,10 @@ const Form = ({InputTexto1, InputTexto2, InputTexto3, RadioInput1, RadioInput2, 
   return (
     <form className = {S.Form}>
         
-        <Input InputTexto1 = {InputTexto1}  InputTexto2 = {InputTexto2} InputTexto3 = {InputTexto3}/>
-        <RadioInput RadioInput1 = {RadioInput1} RadioInput2 = {RadioInput2}/>
+        <Input className = {S.Input} InputTexto1 = "Seu nome:"/>
+        <Input className = {S.Input} InputTexto1 = "E-mail"/>
+        <Input className = {S.Input} InputTexto1 = "CPF"/>
+        <RadioInput RadioInput1 = "Masculino" RadioInput2 = "Feminino"/>
         <Buttom Buttom={Buttom1}/>
        
     </form>

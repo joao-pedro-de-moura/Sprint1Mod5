@@ -1,8 +1,8 @@
 import React from 'react'
 import S from './Card.module.css'
-const Card = ({img, titulo, descricao, preco, parcela, op }) => {
+const Card = ({img, titulo, descricao, preco, parcela, op, className}) => {
   return (
-    <div className = {S.Card}>
+    <div className = {className}>
         <img src = {img}/>
         <h4>{titulo}</h4>
         <p>{descricao}</p>

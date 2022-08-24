@@ -1,8 +1,8 @@
 import React from 'react'
-import S from './Buttom.module.css'
-const Buttom = ({Buttom}) => {
+
+const Buttom = ({Buttom, onClick,className}) => {
   return (
-    <button className = {S.Buttom}>{Buttom}</button>
+    <button className= {className} onClick={onClick} >{Buttom}</button>
   )
 }
 

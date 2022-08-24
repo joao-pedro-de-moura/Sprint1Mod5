@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import Buttom from "../Buttom/Buttom";
 import Card from '../Card/Card'
 import Form from '../Form/Form'
+import Input from "../Input/Input";
 import Paragraph from '../Paragraph/paragraph'
 import Title from "../Title/Title";
 import S from './Main.module.css'
@@ -43,18 +44,22 @@ const Main = () => {
       {produtos.length>0 &&
             produtos.map((item,index) => {
               return(
-        <Card  titulo ={item.name} descricao ={item.description}   preco ={item.oldPrice}  parcela ={item.price}  op ={item.installments.count}/>
+        <Card className = {S.Card} img ={item.image} titulo ={item.name} descricao ={item.description}   preco ={item.oldPrice}  parcela ={item.price}  op ={item.installments.count}/>
               )
             })}
            </div>
             
       </section>
       <div className = {S.divButton}>
-      <button onClick = {nextPage}> enviar</button>
+      <Buttom className = {S.Buttom} onClick = {nextPage} Buttom = "Mais Produtos Aqui!"/>
       </div>
       <section className = {S.Section2}>
         <Title  Title3 = "Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!"/>
-        <Form/>
+          <div className={S.DivSection3}>
+            <Input InputTexto1= "Nome do seu amigo:"/>
+            <Input InputTexto1= "Email:"/>
+          </div>
+          <Buttom className = {S.Buttom} Buttom = "Enviar agora"/>
       </section >
     </main>
   )

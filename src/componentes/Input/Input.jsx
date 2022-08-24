@@ -1,15 +1,10 @@
 import React from 'react'
 import S from './Input.module.css'
-const Input = ({InputTexto1,InputTexto2,InputTexto3}) => {
+const Input = ({InputTexto1,className}) => {
   return (
-    <div className = {S.Input}>
+    <div className = {className}>
         <label for="input">{InputTexto1}</label>
         <input type="text" id="input" name="input"/>
-        <label for="input">{InputTexto2}</label>
-        <input type="text" id="input" name="input"/>
-        <label for="input">{InputTexto3}</label>
-        <input type="text" id="input" name="input"/>
-        
     </div>
   )
 }
